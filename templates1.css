@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Kaushan+Script');
+*{
+    font-family: "Kaushan Script";
+    background-image: url("images/12.jpg"), linear-gradient(rgba(0,168,255,0.3), rgba(0,168,255,0.3));
+    /* background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%); */
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    /* font-family: sans-serif; */
+    font-family: "Kaushan Script";
+    background-color: aqua;
+    color:aqua;
+}
+.gallery{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    margin: 1% auto 0;
+    box-sizing: border-box;
+}
+.image-box{
+    margin: 0 1%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: 0.5s;
+}
+.image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.image-box:hover{
+    flex-basis: 25%;/*50%*/
+}
+.active{
+    flex-basis: 25%;/*50%*/
+}
+.gallery:hover .active{
+    flex-basis: 0%;
+}
+.image-box:nth-child(1):hover{
+    flex-basis: 25%;/*50%*/
+}
